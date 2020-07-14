@@ -4,32 +4,52 @@ body {
 section {
   width:100%;
   height:95vh;
-  background-image: image(/Users/gigingcobo/documents/portfolio/images/backgroundpage.png);
-  background-repeat: None;
+  background-image: url("/Users/gigingcobo/documents/portfolio/images/backgroundpage.png");
+  background-repeat: no-repeat;
   background-size: cover;
+}
+a{
+  text-decoration: none;
 }
 nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px
-  background-color: #FFFFFF;
+
   box-shadow: 2px 2px 12px (rgba 0,0,0,0,2)
   padding: 0px 5%;
 }
 nav ul{
   display: flex;
+  list-style: none;
 }
 nav ul li a{
   margin: 30px;
   font-family: myriad pro regular;
-  color: #505050;
+  color:black;
   font-size:15px;
   font-weight: 700;
 }
 .logo{
   font-family: RoadTest;
-  color:#000000;
+  color: black;
   font-size: 22px;
-
+}
+.active{
+  font-weight: bold;
+  color: #2d2a2a;
+}
+.text-container p:nth-child(1){
+  font-family: myriad pro regular;
+  font-weight: bold;
+  color: grey;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.text-container{
+  position: absolute;
+  left: 13%;
+  top: 42%;
+  transform: translate(-13%,-42%);
 }
